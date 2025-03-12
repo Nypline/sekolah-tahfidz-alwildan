@@ -26,15 +26,18 @@ const Navbar = () => {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
-            <Image src="./next.svg" alt="logo-nav" height={50} width={50} />
+            <Image src="./next.svg" alt="logo-nav" height={80} width={80} />
           </Link>
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-6 text-gray-700">
+        <ul className="hidden md:flex space-x-6 text-gray-700 ">
           {menuItem.map((item, index) => (
             <li key={index}>
-              <a href={item.href} className="hover:text-[#287C74]">
+              <a
+                href={item.href}
+                className="hover:text-[#287C74] text-black transition duration-500"
+              >
                 {item.label}
               </a>
             </li>
