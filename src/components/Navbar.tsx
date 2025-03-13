@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className="bg-white shadow-md fixed inset-x-0 z-20">
       <div className="container mx-auto px-4 flex justify-between items-center py-5">
         {/* Logo */}
-        <div className="flex items-center max-w-40">
+        <div className="flex items-center" style={{ maxWidth: "40px" }}>
           <Link
             href="/"
             className="cursor-pointer"
@@ -44,7 +44,7 @@ const Navbar = () => {
           ))}
         </ul>
         <Button variant="cta" className="hidden md:flex">
-          daftar sekarang
+          PPDB
         </Button>
 
         {/* Hamburger Menu (Mobile) */}
@@ -85,7 +85,7 @@ const Navbar = () => {
                 </a>
               </li>
             ))}
-            <Button variant="cta">daftar sekarang</Button>
+            <Button variant="cta">PPDB</Button>
           </ul>
         </div>
       )}
