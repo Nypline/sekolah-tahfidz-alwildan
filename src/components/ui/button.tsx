@@ -19,7 +19,7 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        cta: "border-3 text-white border-[#287C74] text-[#287C74] hover:cursor-pointer hover:text-white hover:bg-[#287C74] transition duration-500",
+        cta: "border-3 text-white border-[#FFDE59] text-black hover:cursor-pointer hover:text-white hover:bg-[#FFDE59] transition duration-500",
         mainbutton:
           "bg-[#287C74] text-white font-semibold shadow-md hover:bg-[#68b2ab] transition duration-500 text-sm md:text-base lg:text-lg hover:border-transparent rounded-lg",
       },

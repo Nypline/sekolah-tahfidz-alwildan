@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className="bg-white shadow-md fixed inset-x-0 z-20">
       <div className="container mx-auto px-4 flex justify-between items-center py-5">
         {/* Logo */}
-        <div className="flex items-center" style={{ maxWidth: "40px" }}>
+        <div className="flex items-center">
           <Link
             href="/"
             className="cursor-pointer"
@@ -26,7 +26,7 @@ const Navbar = () => {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
-            <Image src="./next.svg" alt="logo-nav" height={80} width={80} />
+            <Image src="./next.svg" alt="logo-nav" height={70} width={70} />
           </Link>
         </div>
 

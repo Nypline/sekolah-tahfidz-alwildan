@@ -1,14 +1,15 @@
 import Image from "next/image";
 import { styles } from "./styles";
 import { rightHeroImage } from "@/assets";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import ExploreButton from "@/components/ui/ExploreButton";
-
+import { line } from "@/assets";
 const Hero = () => {
   return (
     <div
-      className="bg-white flex justify-center items-center pt-20 md:pt-24 lg:pt-14 h-screen"
+      className="bg-white flex justify-center items-center pt-20 md:pt-24 lg:pt-14 min-h-screen
+     "
       id="hero"
     >
       <div className="px-16 py-10 xl:px-16 xl:py-10 lg:px-10 lg:py-7 md:px-6 md:py-5 sm:px-2 sm:py-1.5 mx-auto h-full grid grid-cols-1 lg:grid-cols-2 items-center gap-2 sm:gap-20 ">
@@ -16,10 +17,15 @@ const Hero = () => {
         <div className="text-center lg:text-left text-white">
           <h1 className={`${styles.heroHeadText} text-black`}>
             Sekolah Inklusi Tahfizd AL-Wildan
+            <Image
+              src={line}
+              alt="Line Image"
+              className="mx-0 xl:mx-0 lg:mx-auto min-[320px]:mx-auto"
+            ></Image>
           </h1>
 
-          <p className={`${styles.paragrafText} pb-8 sm:pb-16 text-black`}>
-            kami adalah TK(Taman Kanak-knak) inklusi terpadu AL Wildan yang
+          <p className={`${styles.paragrafText} pb-6 sm:pb-16 text-black`}>
+            kami adalah TK(Taman Kanak-kanak) inklusi terpadu AL Wildan yang
             dikhusus kan untukanak-anak Normal dan beberapa ABK yang di bimbing
             khusus dalam proses pembelajaran
           </p>
