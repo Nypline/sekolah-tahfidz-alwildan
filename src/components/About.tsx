@@ -1,7 +1,5 @@
 import Image from "next/image";
-import { secondline } from "@/assets";
-import { arrow } from "@/assets";
-import { school } from "@/assets";
+import { secondline, arrow, school } from "@/assets";
 import { styles } from "./styles";
 
 const About = () => {
@@ -10,33 +8,35 @@ const About = () => {
       className="bg-red-50 flex items-center justify-center min-h-screen mt-10 py-20"
       id="about"
     >
-      <div className="w-[90%] h-[600px] xl:h-[600px] lg:h-[1400px] md:h-[1200px] min-[320px]:h-[800px] bg-[#287C74] rounded-3xl p-14 flex flex-row justify-between items-center xl:flex-row min-[320px]:flex-col gap-10 xl:gap-10 lg:gap-5 min-[320px]:gap-5  ">
-        <div className="text-center lg:text-left">
+      <div className="w-[90%] bg-[#287C74] rounded-3xl p-14 flex flex-col xl:flex-row justify-between items-center gap-10 xl:gap-10 lg:gap-5 sm:gap-5">
+        <div className="text-center lg:text-left max-w-lg">
           <h2 className={`${styles.heroHeadText} text-white`}>
             Mengapa kami hadir?
           </h2>
-          <Image src={secondline} alt="Line Image" className=""></Image>
+          <Image src={secondline} alt="Garis dekoratif" className="mt-4" />
           <p className={`${styles.paragrafText} mt-5 text-white`}>
-            kami adalah TK(Taman Kanak-knak) inklusi terpadu AL Wildan yang
-            dikhusus kan untukanak-anak Normal dan beberapa ABK yang di bimbing
-            khLorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an{" "}
+            Kami adalah TK (Taman Kanak-kanak) inklusi terpadu AL Wildan yang
+            dikhususkan untuk anak-anak normal dan beberapa ABK yang dibimbing
+            khusus dalam proses pembelajaran.
           </p>
         </div>
-        <div>
+
+        {/* Panah */}
+        <div className="flex justify-center">
           <Image
             src={arrow}
-            alt=""
-            className="w-[800px] xl:w-[800px] lg:w-[400px] md:w-[200px] min-[320px]:w-[100px]"
-          ></Image>
+            alt="Panah dekoratif"
+            className="w-[300px] md:w-[400px] lg:w-[500px] xl:w-[600px]"
+          />
         </div>
-        <div>
+
+        {/* Gambar Sekolah */}
+        <div className="flex justify-center">
           <Image
             src={school}
-            alt=""
-            className=" w-[2000px] xl:w-[2000px] lg:w-[1000px] md:w-[500px] sm:w-[400px] min-[320px]:w-[300px]"
-          ></Image>
+            alt="Ilustrasi Sekolah"
+            className="w-[300px] sm:w-[400px] md:w-[500px] lg:w-[700px] xl:w-[900px]"
+          />
         </div>
       </div>
     </div>
